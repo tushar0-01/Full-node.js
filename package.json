@@ -1,0 +1,22 @@
+{
+  "name": "node-js",
+  "version": "1.0.0",
+  "description": "packages of npm",
+  "license": "ISC",
+  "author": "tushar sharma",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "express": "^5.2.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^9.1.5",
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
