@@ -2,6 +2,8 @@ const express=require('express')
 
 const app = express()
 const db=require('./db')
+require('dotenv').config();
+const port=process.env.port || 2000;
 
 const bodyparser=require('body-parser')
 app.use(bodyparser.json()); // req.body
@@ -15,6 +17,6 @@ const menuroutes=require('./routes/menuroutes');
 app.use('/menu',menuroutes);
 
 
-app.listen(2000,()=>{
+app.listen(port,()=>{
     console.log('server is running');
 })
