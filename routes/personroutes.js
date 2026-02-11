@@ -32,6 +32,10 @@ router.get('/:worktype',async (req,res)=>{
 router.get('/',async (req,res)=>{
     try{
     const data=await person.find();
+    if(data.length==0){
+        console.log('no data found');
+        res.status(404).json({error:'no data found'});
+    }
     console.log('data fetched');
     res.status(200).json(data);
     }catch(err){
@@ -45,9 +49,9 @@ router.put('/:id',async (req,res)=>{
         const personid=req.params.id;
         const updatedata=req.body;
         const response=await person.findByIdAndUpdate(personid,updatedata,{
-            new:true, // return updated document
-            runvalidator :true,
-        })
+            new:true,
+            runvalidators:true
+        });
         if(!response){
             console.log('person not found');
             res.status(404).json({error:'person not found'});
