@@ -4,7 +4,7 @@ const mongourl=process.env.mongourl;
 const mongo_local_URL=process.env.mongo_local_URL;
 // define mongodb connection url
 // const mongoURL=mongo_local_URL; 
- const mongoURL=mongourl;
+ const mongoURL=mongo_local_URL;
  
 
  //set up mongodb connection
