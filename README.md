@@ -12,3 +12,9 @@ A clean, minimal, and easy-to-understand Node.js boilerplate designed to get you
 Before you begin, ensure you have met the following requirements:
 * You have installed the latest version of [Node.js](https://nodejs.org/en/) and npm.
 * You have a basic understanding of JavaScript and backend development.
+  
+## What is there in this repo..
+* Basic knowledge i.e how to start server.
+* How to make routes.
+* How to make models.
+* How to host at online server.
